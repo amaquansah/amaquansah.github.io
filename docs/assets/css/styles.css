@@ -19,7 +19,7 @@ body {
 #contactForm input[type="text"]:focus,
 #contactForm input[type="email"]:focus,
 #contactForm textarea:focus {
-  border: 4px solid #800020;
+  border: 4px solid #0096c7;
   outline: none;
 }
 body.dark-mode #contactForm input[type="text"],
@@ -29,7 +29,7 @@ body.dark-mode #contactForm textarea {
   color: #fff;
 }
 .navbar {
-  background-color: #800020;
+  background-color: #0096c7;
   color: black;
   transition: background-color 0s, color 0s;
   border-bottom: 1px solid  #ccc;
@@ -57,7 +57,7 @@ body.dark-mode, .navbar.dark-mode {
 }
 .navbar .nav-link[aria-expanded="true"], .navbar .dropdown-menu a {
   color: black;
-  background-color: #800020;
+  background-color: #0096c7;
 }
 .navbar.dark-mode .nav-link[aria-expanded="true"], .navbar.dark-mode .dropdown-menu a {
   color: #fff;
@@ -69,7 +69,7 @@ body.dark-mode, .navbar.dark-mode {
   }
   .navbar .dropdown-menu a:hover {
     background-color: #fff;
-    color: #800020;
+    color: #0096c7;
   }
   .back-to-top {
   position: fixed;
@@ -87,7 +87,7 @@ body.dark-mode, .navbar.dark-mode {
   z-index: 1000;
 }
 .back-to-top:hover {
-  background-color: #800020;
+  background-color: #0096c7;
 }
 body.dark-mode .back-to-top {
   background-color: #343a40;
@@ -95,7 +95,7 @@ body.dark-mode .back-to-top {
   border: 0.5px solid #fff;
 }
 body.dark-mode .back-to-top:hover {
-  background-color: #800020;
+  background-color: #0096c7;
 }
 
 .navbar.dark-mode .nav-link.active {
@@ -127,7 +127,7 @@ details > summary:before {
   height: 25px;
   line-height: 25px;
   text-align: center;
-  background: #800020;
+  background: #0096c7;
   border: 1px solid #ccc;
   margin-right: 10px;
   font-size: 16px;
@@ -139,11 +139,11 @@ details[open] > summary:before {
   color: #fff !important;
 }
 .navbar .nav-link:hover, .navbar a:hover {
-  color: #800020;
-  /*background-color: #800020;*/
+  color: #0096c7;
+  /*background-color: #0096c7;*/
 }
 .navbar.dark-mode .nav-link:hover, .navbar.dark-mode a:hover {
-  color: #800020;
+  color: #0096c7;
 }
 #theme-toggle {
   font-size: 20px;
@@ -222,7 +222,7 @@ body.dark-mode .references {
 }
 
 body.dark-mode .references a {
-  color: #800020; /* Link color in references for dark mode */
+  color: #0096c7; /* Link color in references for dark mode */
 }
 
 /* Additional styles for any specific reference tags, if used */
@@ -277,15 +277,15 @@ body.dark-mode a {
 
 
 body.dark-mode a:hover {
-    color: #800020 !important; /* Specify hover color for all links in dark mode */
+    color: #0096c7 !important; /* Specify hover color for all links in dark mode */
 }
 
 body a:hover {
-    color: #800020 !important; /* Specify hover color for all links in dark mode */
+    color: #0096c7 !important; /* Specify hover color for all links in dark mode */
 }
 
 .navbar a:hover{
-  color:#800020 !Important;
+  color:#0096c7 !Important;
 }
 
 
@@ -594,7 +594,7 @@ body.dark-mode #hero-heading {
 
 .about-entity .about-links .about-link i:hover {
     transform: scale(1.3); /* Scales up icon on hover */
-    border-color: #800020 !important; /* Changes border color on hover */
+    border-color: #0096c7 !important; /* Changes border color on hover */
 }
 
 
@@ -646,7 +646,7 @@ pre, code {
 
 .navbar .nav-link:hover {
     transform: scale(1.1); /* Slightly enlarges the navbar link on hover */
-    color: #800020 !important; /* Optional: change color on hover */
+    color: #0096c7 !important; /* Optional: change color on hover */
 }
 
 
@@ -662,7 +662,7 @@ pre, code {
 
 .navbar .nav-link:hover {
     transform: scale(1.1); /* Slightly enlarges the navbar link on hover */
-    color: #800020 !important; /* Optional: change color on hover */
+    color: #0096c7 !important; /* Optional: change color on hover */
 }
 
 
@@ -677,7 +677,7 @@ pre, code {
 /* For panel tabset headings in dark mode */
 body.dark-mode .panel-tabset .nav-tabs .nav-item .nav-link {
   background-color: transparent;
-  color: #800020; /* Default tab color in dark mode */
+  color: #0096c7; /* Default tab color in dark mode */
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -689,7 +689,7 @@ body.dark-mode .panel-tabset .nav-tabs .nav-item .nav-link.active {
 
 /* Hover effect for tabs in dark mode */
 body.dark-mode .panel-tabset .nav-tabs .nav-item .nav-link:hover {
-  color: #800020 !important; /* Lighter blue color on hover */
+  color: #0096c7 !important; /* Lighter blue color on hover */
 }
 
 
@@ -703,9 +703,6 @@ body.dark-mode .panel-tabset .nav-tabs .nav-item .nav-link:hover {
 .navbar a {
   font-size: 1.2em !important; /* Adjust this value as needed */
 }
-
-
-
 
 
 

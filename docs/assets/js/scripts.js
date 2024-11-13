@@ -21,79 +21,8 @@ function toggleDarkMode() {
   // Update local storage with the selected theme
   localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
   
-  // Update Giscus theme based on dark mode
-  updateGiscusTheme();
   
   updateCodeWrappers();
-}
-/*
-// Function to update the Giscus theme dynamically
-function updateGiscusTheme() {
-  const giscusContainer = document.getElementById('giscus-container');
-  if (giscusContainer) {
-    const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-    giscusContainer.innerHTML = '';  // Clear the existing Giscus comments
-    const giscusScript = document.createElement('script');
-    giscusScript.src = 'https://giscus.app/client.js';
-    giscusScript.setAttribute('data-repo', 'NKstats/discussion');
-    giscusScript.setAttribute('data-repo-id', 'R_kgDOM6gFtQ');
-    giscusScript.setAttribute('data-category', 'Announcements');
-    giscusScript.setAttribute('data-category-id', 'DIC_kwDOM6gFtc4Ci_lr');
-    giscusScript.setAttribute('data-mapping', 'pathname');
-    giscusScript.setAttribute('data-strict', '0');
-    giscusScript.setAttribute('data-reactions-enabled', '1');
-    giscusScript.setAttribute('data-emit-metadata', '0');
-    giscusScript.setAttribute('data-input-position', 'bottom');
-    giscusScript.setAttribute('data-theme', theme); // Set the theme here
-    giscusScript.setAttribute('data-lang', 'en');
-    giscusScript.setAttribute('crossorigin', 'anonymous');
-    giscusScript.async = true;
-    
-    // Append the updated Giscus script to the container
-    giscusContainer.appendChild(giscusScript);
-  }
-}
-*/
-
-// Function to update the Giscus theme dynamically using postMessage API
-function updateGiscusTheme() {
-  const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-  const iframe = document.querySelector('iframe.giscus-frame');
-  
-  if (iframe) {
-    // Use postMessage to update the Giscus theme dynamically
-    iframe.contentWindow.postMessage({
-      giscus: {
-        setConfig: {
-          theme: theme
-        }
-      }
-    }, 'https://giscus.app');
-  } else {
-    // If iframe doesn't exist, load Giscus script initially
-    const giscusContainer = document.getElementById('giscus-container');
-    if (giscusContainer) {
-      giscusContainer.innerHTML = '';  // Clear the existing Giscus comments
-      const giscusScript = document.createElement('script');
-      giscusScript.src = 'https://giscus.app/client.js';
-      giscusScript.setAttribute('data-repo', 'NKstats/discussion');
-      giscusScript.setAttribute('data-repo-id', 'R_kgDOM6gFtQ');
-      giscusScript.setAttribute('data-category', 'Announcements');
-      giscusScript.setAttribute('data-category-id', 'DIC_kwDOM6gFtc4Ci_lr');
-      giscusScript.setAttribute('data-mapping', 'pathname');
-      giscusScript.setAttribute('data-strict', '0');
-      giscusScript.setAttribute('data-reactions-enabled', '1');
-      giscusScript.setAttribute('data-emit-metadata', '0');
-      giscusScript.setAttribute('data-input-position', 'bottom');
-      giscusScript.setAttribute('data-theme', theme); // Set the theme here
-      giscusScript.setAttribute('data-lang', 'en');
-      giscusScript.setAttribute('crossorigin', 'anonymous');
-      giscusScript.async = true;
-      
-      // Append the updated Giscus script to the container
-      giscusContainer.appendChild(giscusScript);
-    }
-  }
 }
 
 
@@ -119,8 +48,6 @@ function applyThemePreference() {
     toggleButton.title = "Switch to Dark Mode";
   }
 
-  // Ensure Giscus theme is also applied correctly on page load
-  updateGiscusTheme();
 
   updateCodeWrappers();
 }
